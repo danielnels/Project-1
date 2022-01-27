@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Cultured</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"/>
+    <!-- tailwinds -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="./Assets/Style/home.css">
+  </head>
+  <body class="flex h-screen w-screen flex-col bg-cover bg-local">
+    <header class="mx-3 text-white text-center mt-5">
+      <h1 class="text-4xl sm:text-6xl">Get Cultured</h1>
+      <p class="text-2xl sm:text-4xl">Learn Someting Useful For Once</p>
+    </header>
+    <div id="search-container" class="flex flex-col items-center justify-end grow">
+      <div class="flex rounded-lg w-3/4 mb-16">
+        <input id="search-input" type="text" class="grow pl-8 py-5 rounded-l" placeholder="Search..."/>
+        <button id="input-btn" class="flex items-center justify-center px-4 border-l bg-white rounded-r">
+          <svg class="w-8 h-8 text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="history" class="grow justify-center text-white">
+      <div class="flex justify-center gap-3 ">
+        <h1 class="text-center text-2xl">History</h1>
+        <button id="clear-history" type="button" class="block px-4 py-2 text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm text-center">Clear</button>
+      </div>
+      <div id="history-container"></div>
+    </div>
+    <footer class="mx-3 my-3">
+      <h1 class="text-lg sm:text-2xl text-white text-center">Made with ❤️️ by Ultimate Victory Team</h1>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Assets/JS/home.js"></script>
+  </body>
+</html>
